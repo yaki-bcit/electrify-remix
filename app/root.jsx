@@ -24,7 +24,7 @@ export const links = () => [
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="en" style={{ fontFamily: "Mina, system-ui, sans-serif", lineHeight: "1.4" }}>
       <head>
         <Meta />
         <Links />
@@ -70,7 +70,7 @@ export default function App() {
                 Knowledge
               </a>
               <a
-                href="/knowledge"
+                href="/dashboard"
                 className="hover:text-teal-800 px-3 py-2"
               >
                 Dashboard
@@ -97,13 +97,12 @@ export default function App() {
               </div>
             </a>
             <a
-              href="/knowledge"
+              href="/dashboard"
               className="block hover:text-teal-800 px-3 py-2"
             >
               <div className="flex content-end">
                 <AiOutlineDashboard size="1.2em" /> &nbsp; <span>Dashboard</span>
               </div>
-              
             </a>
             <a
               href="/dashboard"

@@ -6,7 +6,7 @@ or just html elements as the 'children' prop.
 
 export default function WhiteBox(props) {
   return (
-    <div className="bg-white rounded-lg p-5">
+    <div className="bg-white rounded-lg p-5 mb-4">
       {props.children}
     </div>
   );
