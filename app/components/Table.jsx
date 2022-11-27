@@ -5,7 +5,7 @@ export default function Table(props) {
         <thead className="bg-gray-200 border">
           <tr>
             <th className="px-4 py-2">Knowledge</th>
-            <th className="px-4 py-2">Quiz Result</th>
+            <th className="px-4 py-2">Quiz</th>
             <th></th>
           </tr>
         </thead>

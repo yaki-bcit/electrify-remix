@@ -88,10 +88,9 @@ export default function App() {
               href="/knowledge"
               className="block hover:text-teal-800 px-5 py-6"
             >
-              <div className="flex content-end">
-                <HiOutlineBookOpen size="1.4em" className="text-[#3B8D95]" /> 
-                &nbsp; 
-                <span className="text-[#3B8D95] text-xl ">
+              <div className="flex items-end">
+                <HiOutlineBookOpen size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">
                   Knowledge
                 </span>
               </div>
@@ -100,20 +99,18 @@ export default function App() {
               href="/dashboard"
               className="block hover:text-teal-800 px-5 py-6"
             >
-              <div className="flex content-end">
-                <AiOutlineDashboard size="1.4em" className="text-[#3B8D95]" /> 
-                &nbsp; 
-                <span className="text-[#3B8D95] text-xl">Dashboard</span>
+              <div className="flex items-end">
+                <AiOutlineDashboard size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">Dashboard</span>
               </div>
             </a>
             <a
-              href="/dashboard"
+              href="/about"
               className="block hover:text-teal-800 px-5 py-6"
             >
-              <div className="flex content-end">
-                <AiOutlineInfoCircle size="1.4em" className="text-[#3B8D95]" /> 
-                &nbsp; 
-                <span className="text-[#3B8D95] text-xl">About Electrify</span>
+              <div className="flex items-end">
+                <AiOutlineInfoCircle size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">About Electrify</span>
               </div>
             </a>
           </div>
