@@ -42,7 +42,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row md:justify-between" id="navigation">
             <div className="flex flex-row md:hidden">
               <button
-                className="flex items-center px-3 py-2 border rounded text-teal-500 border-teal-500 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded text-[#3B8D95] border-[#3B8D95] hover:text-white hover:border-white"
                 onClick={() => {
                   const menu = document.getElementById("menu");
                   menu.classList.toggle("hidden");
@@ -86,30 +86,34 @@ export default function App() {
           <div id="menu" className="hidden md:hidden absolute text-lg" style={{ backgroundColor: "#C2E1E8" }}>
             <a
               href="/knowledge"
-              className="block hover:text-teal-800 px-3 py-2"
+              className="block hover:text-teal-800 px-5 py-6"
             >
               <div className="flex content-end">
-                <HiOutlineBookOpen size="1.2em" /> 
+                <HiOutlineBookOpen size="1.4em" className="text-[#3B8D95]" /> 
                 &nbsp; 
-                <span className="">
+                <span className="text-[#3B8D95] text-xl ">
                   Knowledge
                 </span>
               </div>
             </a>
             <a
               href="/dashboard"
-              className="block hover:text-teal-800 px-3 py-2"
+              className="block hover:text-teal-800 px-5 py-6"
             >
               <div className="flex content-end">
-                <AiOutlineDashboard size="1.2em" /> &nbsp; <span>Dashboard</span>
+                <AiOutlineDashboard size="1.4em" className="text-[#3B8D95]" /> 
+                &nbsp; 
+                <span className="text-[#3B8D95] text-xl">Dashboard</span>
               </div>
             </a>
             <a
               href="/dashboard"
-              className="block hover:text-teal-800 px-3 py-2"
+              className="block hover:text-teal-800 px-5 py-6"
             >
               <div className="flex content-end">
-                <AiOutlineInfoCircle size="1.2em" /> &nbsp; <span>About Electrify</span>
+                <AiOutlineInfoCircle size="1.4em" className="text-[#3B8D95]" /> 
+                &nbsp; 
+                <span className="text-[#3B8D95] text-xl">About Electrify</span>
               </div>
             </a>
           </div>
