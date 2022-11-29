@@ -22,7 +22,6 @@ export default function LandingPage() {
 						<ButtonLight className="p-4 m-4" text="Do I Need An Electric Vehicle?" />
 					</div>
 				</div>
-
 			</div>
 		</main>
 	)
