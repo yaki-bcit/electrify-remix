@@ -10,7 +10,7 @@ import WhiteBox from "~/components/WhiteBox";
 
 import HomeIconText from "~/components/HomeIconText";
 import Paragraph from "~/components/Paragraph";
-import ButtonDark from "~/components/ButtonDark";
+import ButtonDark from "~/components/Buttons/ButtonDark";
 
 export const loader = async () => {
   return null
