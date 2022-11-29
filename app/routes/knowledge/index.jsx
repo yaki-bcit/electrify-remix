@@ -27,7 +27,7 @@ export default function Knowledge() {
       <WhiteBox href="UsabilityKnowledge" text="About Usability"/>
       <WhiteBox href="?" text="About Saving Gas?"/>
       <WhiteBox href="?" text="About Someone Thinkone?"/>
-      <ButtonDark text="Go Back" href="/dashboard"/>
+      <ButtonDark text="Go Back" href="/home"/>
     </>
   );
 }
