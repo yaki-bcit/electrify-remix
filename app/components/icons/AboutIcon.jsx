@@ -1,9 +1,9 @@
 import React from 'react'
-
+import {AiOutlineInfoCircle } from "react-icons/ai";
 export default function AboutIcon() {
   return (
     <div>
-      <img style={{width:"45px", height:"auto"}} src="images/LogoSmall.svg" alt="AboutIcon" />
+       <AiOutlineInfoCircle style={{width:"45px", height:"auto", color: "#3B8D95"}}/>
     </div>
   )
 }

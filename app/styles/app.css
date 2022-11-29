@@ -525,6 +525,10 @@ video {
   bottom: -5rem;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
