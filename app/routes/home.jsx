@@ -7,6 +7,7 @@ import BookOpen from '~/components/icons/BookOpen';
 import DashIcon from '~/components/icons/DashIcon';
 import AboutIcon from '~/components/icons/AboutIcon';
 import HomeIconText from '~/components/HomeIconText';
+import Logo from '~/components/icons/Logo';
 
 export default function Home() {
     function menuClick() {
@@ -14,7 +15,7 @@ export default function Home() {
     }
     return (
         <div>
-            <img src="images/Logo.svg" alt="Logo" />
+            <Logo/>
             <Paragraph text="Learn about Electronic Vehicles and find your dream cars that suits your needs." />
             <HomeIconText text="Knowledgee" href="/knowledge" icon={<BookOpen />} menuClick={menuClick} />
             <HomeIconText text="Dashboard" href="/dashboard" icon={<DashIcon />} menuClick={menuClick} />
