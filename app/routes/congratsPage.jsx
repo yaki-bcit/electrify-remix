@@ -1,5 +1,5 @@
-import ButtonDark from "~/components/ButtonDark"
-import ButtonLight from "~/components/ButtonLight"
+import ButtonDark from "~/components/Buttons/ButtonDark"
+import ButtonLight from "~/components/Buttons/ButtonLight"
 import Paragraph from "~/components/Paragraph"
 import { Link } from "@remix-run/react";
 

@@ -1,6 +1,6 @@
 import Paragraph from "~/components/Paragraph";
-import ButtonDark from "~/components/ButtonDark";
-import ButtonLight from "~/components/ButtonLight";
+import ButtonDark from "~/components/Buttons/ButtonDark";
+
 import { Link } from "@remix-run/react";
 
 export default function LandingPage() {
