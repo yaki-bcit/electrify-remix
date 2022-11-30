@@ -1,23 +1,20 @@
-import { useState } from "react";
-import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
-
 import PageHeading from "~/components/PageHeading";
 import WhiteBox from "~/components/WhiteBox";
 import Checkbox from "~/components/Checkbox";
 import RadioGroup from "~/components/RadioGroup";
 import CheckboxGroup from "~/components/CheckboxGroup";
 
-export const loader = async () => {
-  return null
-};
-
-export default function Knowledge() {
-  const [answers, setAnswers] = useState([]);
-
+export default function Charging() {
   return (
     <>
-      <PageHeading text="Knowledge" />
+      <PageHeading text="Charging" />
+      <WhiteBox>
+        <p className="text-lg">
+          Charging is a very important part of the electric vehicle experience.
+          It is important to understand how to charge your vehicle and how to
+          charge it safely.
+        </p>
+      </WhiteBox>
       <CheckboxGroup
         name="knowledge"
         options={[
@@ -38,5 +35,5 @@ export default function Knowledge() {
           ]}
         />
     </>
-  );
+  )
 }
