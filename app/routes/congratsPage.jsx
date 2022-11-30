@@ -4,9 +4,15 @@ import Paragraph from "~/components/Paragraph"
 import { Link } from "@remix-run/react";
 
 export default function congratsPage() {
-	const text = `
-		Congratulations, you are the father!
-	`
+
+	// this will be calculated from the quiz results
+	let evIsSuitable = true;
+	let text;
+	if (evIsSuitable) {
+		text = `It looks like an electric vehicle is a good fit for you!`
+	} else {
+		text = `It looks like an electric vehicle may not suit your needs.`
+	}
 
 
 	return (

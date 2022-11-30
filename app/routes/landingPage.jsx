@@ -1,6 +1,7 @@
 import Paragraph from "~/components/Paragraph";
 import ButtonDark from "~/components/ButtonDark";
 import ButtonLight from "~/components/ButtonLight";
+import { Link } from "@remix-run/react";
 
 export default function LandingPage() {
 	let text = `
@@ -11,17 +12,21 @@ export default function LandingPage() {
 
 	return (
 		<main>
-			<img src="/images/Logo.svg" className="" />
-			<div className="bg-white m-6 p-6 flex flex-col">
-				<Paragraph text={text} />
-				<div className="">
-					<div className="m-3 ">
-						<ButtonDark text="Get Started" className=""/>
+			<div className="block justify-items-center">
+				<img src="/images/Logo.svg" className="mx-auto" />
+			</div>
+			<div className="bg-white p-3 text-center">
+				<Paragraph text={text} className="p-4" />
+				<Link to="/">
+					<div className="p-4">
+						<ButtonDark text="Start The Quiz" className=""/> 
 					</div>
-					<div className="m-3">
-						<ButtonLight className="p-4 m-4" text="Do I Need An Electric Vehicle?" />
+				</Link>
+			  <Link to="/"> 
+					<div className="p-3">
+						<ButtonDark text="Go Back"/>
 					</div>
-				</div>
+				</Link>
 			</div>
 		</main>
 	)
