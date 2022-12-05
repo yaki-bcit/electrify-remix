@@ -1,5 +1,5 @@
 export default function Paragraph({text}) {
   return (
-    <p className="">{text}</p>
+    <p className="text-lg">{text}</p>
   );
 }
