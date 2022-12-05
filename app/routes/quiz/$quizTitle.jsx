@@ -2,7 +2,7 @@ import { useLoaderData } from "@remix-run/react";
 import { useState } from "react"
 import useLocalStorage from "~/utils/useLocalStorage"
 
-import ButtonDark from "~/components/ButtonDark"
+import ButtonDark from "~/components/Buttons/ButtonDark"
 import WhiteBox from "~/components/WhiteBox"
 import ProgressBar from "~/components/ProgressBar"
 import CheckboxGroup from "~/components/CheckboxGroup"
