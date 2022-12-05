@@ -25,7 +25,7 @@ export default function Knowledge() {
       <Paragraph text="Let's earn  about electric viechles and find the most suitable car for your needs."/>
       <WhiteBox href="safetyKnowledge" text="About Safety"/>
       <WhiteBox href="UsabilityKnowledge" text="About Usability"/>
-      <WhiteBox href="?" text="About Saving Gas?"/>
+      <WhiteBox href="savingGasKnowledge" text="About Saving Gas?"/>
       <WhiteBox href="?" text="About Someone Thinkone?"/>
       <ButtonDark text="Go Back" href="/home"/>
     </>
