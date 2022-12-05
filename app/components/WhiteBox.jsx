@@ -6,8 +6,10 @@ or just html elements as the 'children' prop.
 
 export default function WhiteBox(props) {
   return (
-    <div className="bg-white rounded-lg p-5 mb-4">
-      {props.children}
+    <a href={props.href}><div className=" pl-9 bg-white rounded-lg p-5 mb-4 text-lg">
+      {props.text}
     </div>
+    </a>
+
   );
 }
