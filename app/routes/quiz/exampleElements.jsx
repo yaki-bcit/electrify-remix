@@ -4,7 +4,7 @@ import Checkbox from "~/components/Checkbox";
 import RadioGroup from "~/components/RadioGroup";
 import CheckboxGroup from "~/components/CheckboxGroup";
 
-export default function Charging() {
+export default function Example() {
   return (
     <>
       <PageHeading text="Charging" />

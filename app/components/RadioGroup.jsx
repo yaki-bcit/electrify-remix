@@ -1,6 +1,6 @@
 import Radio from "./Radio";
 
-export default function RadioGroup({name, options}) {
+export default function RadioGroup({name, options, handleChange}) {
   return (
     <fieldset>
       {options.map((option) => (
