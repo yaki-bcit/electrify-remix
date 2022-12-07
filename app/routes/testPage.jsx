@@ -1,7 +1,7 @@
 
-import ButtonDark from "~/components/ButtonDark"
+import ButtonDark from "~/components/Buttons/ButtonDark"
 import Paragraph from "~/components/Paragraph"
-import { Link } from "@remix-run/react";
+
 
 export default function testpage() {
 	let text = `
@@ -9,25 +9,19 @@ export default function testpage() {
 		There are a lot of things to consider before you make the switch.
 		This quiz will help you figure out if it is the right decision for you.
 	`
-	
+
 
 	return (
 		<>
-			<div className="block justify-items-center">	
+			<div className="block justify-items-center">
 				<img src="/images/Logo.svg" className="mx-auto" />
 			</div>
-			<div className="bg-white p-3 text-center">
-				<Paragraph text={text} className="p-4"/>		
-				<Link to="/">
-					<div className="p-4">
-						<ButtonDark text="Start The Quiz" className=""/> 
-					</div>
-				</Link>
-			  <Link to="/"> 
-					<div className="p-3">
-						<ButtonDark text="Go Back"/>
-					</div>
-				</Link>
+			<div className="h-[400px] bg-white rounded-lg p-5 mb-4 text-lg  grid grid-rows-2 text-center">
+				<Paragraph text={text} />
+				<div className="my-4">
+				<ButtonDark href="/quizStart" text="Start the quiz" />
+				<ButtonDark href="/landingPage" text="Go back" />
+				</div>
 			</div>
 		</>
 	)

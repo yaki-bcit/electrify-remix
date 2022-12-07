@@ -1,6 +1,7 @@
-export default function Quiz() {
+export default function QuizIndex() {
   return (
     <>
+      <Outlet />
     </>
   )
 }

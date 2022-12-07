@@ -544,6 +544,11 @@ video {
   margin-right: 1rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -570,6 +575,10 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mb-44 {
+  margin-bottom: 11rem;
 }
 
 .block {
@@ -610,6 +619,10 @@ video {
 
 .h-\[490px\] {
   height: 490px;
+}
+
+.h-\[400px\] {
+  height: 400px;
 }
 
 .w-5 {
@@ -668,6 +681,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-items-center {
