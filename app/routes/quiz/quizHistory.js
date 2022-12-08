@@ -9,7 +9,7 @@ export const quizzes = {
 				options: [
 					{
 						text: '1832 in Scotland',
-						value: '1832 in Scotland', 
+						value: '1832 in Scotland',
 						correct: true,
 					},
 					{
@@ -108,7 +108,7 @@ export const quizzes = {
 						value: 'BMW i3',
 						correct: false,
 					},
-					
+
 				],
 			},
 			{
@@ -139,5 +139,5 @@ export const quizzes = {
 				],
 			}
 		]
-  }
+	}
 }
