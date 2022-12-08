@@ -26,6 +26,7 @@ export const meta = () => ({
 
 export const links = () => [
   { rel: "stylesheet", href: styles },
+  { rel: "icon", href: '/images/Logo.svg' }
 ];
 
 export default function App() {
