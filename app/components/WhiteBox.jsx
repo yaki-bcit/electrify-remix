@@ -4,12 +4,10 @@ To use white box, import it on a page and give other components
 or just html elements as the 'children' prop.
 */
 
-export default function WhiteBox(props) {
+export default function WhiteBox({children}) {
   return (
-    <a href={props.href}><div className=" pl-9 bg-white rounded-lg p-5 mb-4 text-lg">
-      {props.text}
+    <div className="bg-white rounded-lg p-5 mb-4 text-lg">
+      {children}
     </div>
-    </a>
-
-  );
+  )
 }
