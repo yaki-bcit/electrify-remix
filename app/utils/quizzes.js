@@ -110,4 +110,126 @@ export const quizzes = {
       },
     ]
   },
+  safety: {
+    title: 'EV Safety',
+    questions: [
+      {
+        title: 'Question 1', // title can be more descriptive, like the topic of the question
+        text: 'What type of battery is used in EV cars?',
+        multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+        options: [
+          {
+            text: 'Carbon Zinc Batteries ',
+            value: 'Carbon Zinc Batteries', // value is a shorter version of text if text is very long
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'Lithium - ion battery',
+            value: 'Lithium - ion battery',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Zinc Air Batteries',
+            value: 'Zinc Air Batteries',
+            correct: false,
+            checked: false
+          },
+          {
+            text:'Silver Oxide Batteries',
+            value: 'Silver Oxide Batteries',
+            correct: false,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 2',
+        text: 'lithium - ion batteries have a much lower risk of fire explosions than gasoline in conventional vehicles.',
+        multiple: false,
+        options: [
+          {
+            text:'Yes',
+            value: 'Yes',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'No',
+            value: 'No',
+            correct: false,
+            checked: false,
+          
+          },
+        ],
+      },
+      {
+        title: 'Question 3',
+        text: 'Thermal runaway is an unstoppable chain reaction causing a fire at temperatures of _____ and above',
+        multiple: false,
+        options: [
+          {
+            text: '30 degree',
+            value: '30 degree',
+            correct: false,
+            checked: false,
+          },
+          {
+            Text:'40 degree',
+            value: '40 degree',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '50 degree',
+            value: '50 degree',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '60 degree',
+            value: '60 degree',
+            correct: true,
+            checked: false,
+          },
+
+        ],
+      },
+      {
+        title: 'Question 4',
+        text: 'What are the ways to prevent and reduce the impact of thermal runaway in electric cars?',
+        multiple: true,
+        options: [
+          {
+            text: 'Cell-to-cell protection',
+            value: 'Cell-to-cell protection',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Module-to-module protection',
+            value: 'Module-to-module protection',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Pack level protection',
+            value: 'Pack level protection',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Checking by yourself',
+            value: 'Checking by yourself',
+            correct: false,
+            checked: false,
+          },
+
+        ],
+      },
+    ]
+  },
+
+
 }

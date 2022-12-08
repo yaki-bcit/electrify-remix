@@ -57,7 +57,6 @@ export default function jane() {
         }
     }
 
-
     return (
         <div className='mx-4 mt-9'>
             {conditionalComponent()}
