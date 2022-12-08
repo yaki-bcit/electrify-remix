@@ -9,6 +9,8 @@ export default function RadioGroup({name, options, handleChange}) {
           text={option.text}
           name={name}
           value={option.value}
+          handleChange={handleChange}
+          checked={option.checked}
         />
       ))}
     </fieldset>
