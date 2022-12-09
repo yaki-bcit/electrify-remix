@@ -1,0 +1,538 @@
+export const quizzes = {
+  opening: {
+    title: 'Is an Electric Vehicle (EV)a good choice for you?',
+    questions: [
+      {
+        title: 'Question 1', // title can be more descriptive, like the topic of the question
+        text: 'what would you use your car for?',
+        multiple: true, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+        options: [
+          {
+            text: 'Work or school',
+            value: 'Work or school', // value is a shorter version of text if text is very long
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Long distance travel',
+            value: 'Long distance travel',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Uber driving',
+            value: 'Uber driving',
+            correct: true,
+            checked: false
+          },
+          {
+            text:'Groceries and Activityes',
+            value: 'Groceries and Activityes',
+            correct: true,
+            checked: false,
+          },
+          {
+            text:'Others',
+            value: 'Others',
+            correct: true,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 2',
+        text: 'Have you ever used a Electric Car?',
+        multiple: false,
+        options: [
+          {
+            text:'Yes',
+            value: 'Yes',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'No',
+            value: 'No',
+            correct: true,
+            checked: false,
+          
+          },
+        ],
+      },
+      {
+        title: 'Question 3',
+        text: 'How many hours do you drive Weekly?',
+        multiple: false,
+        options: [
+          {
+            text: 'Less Than 5 hours',
+            value: 'Less Than 5 hours',
+            correct: false,
+            checked: false,
+          },
+          {
+            Text:'Around 10 hours',
+            value: 'Around 10 hours',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'Around 15 hours',
+            value: 'Around 15 hours',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'Around 20 hours',
+            value: 'Around 20 hours',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'More thank 30 hours',
+            value: 'More thank 30 hours',
+            correct: true,
+            checked: false,
+          },
+
+        ],
+      },
+      {
+        title: 'Question 4',
+        text: 'What type of road do you drive you car?',
+        multiple: true,
+        options: [
+          {
+            text: 'Pavement',
+            value: 'Pavement',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Mud Road',
+            value: 'Mud Road',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Dirt Road',
+            value: 'Dirt Road',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Desert',
+            value: 'Desert',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'Snowy road',
+            value: 'Snowy road',
+            correct: true,
+            checked: false,
+          },
+
+        ],
+      },
+      {
+        title: 'Question 4',
+        text: 'How many passengers do you usually take when you drive?',
+        multiple: true,
+        options: [
+          {
+            text: 'No passengers',
+            value: 'No passengers',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: '1 -2  Passengers',
+            value: '1 -2  Passengers',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: '3-4  Passengers',
+            value: '3-4  Passengers',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: '5-6 Passengers',
+            value: '5-6 Passengers',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'More than 6 Passengers',
+            value: 'More than 6 Passengers',
+            correct: true,
+            checked: false,
+          },
+
+        ],
+      },
+    ]
+  },
+  charging: {
+    title: 'EV Charging',
+    questions: [
+      {
+        title: 'Question 1', // title can be more descriptive, like the topic of the question
+        text: 'What is the maximum charging rate for a Level 1 charger?',
+        multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+        options: [
+          {
+            text: '12 kW',
+            value: '12 kW', // value is a shorter version of text if text is very long
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '2.4 kW',
+            value: '2.4 kW',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: '50 kW',
+            value: '50 kW',
+            correct: false,
+            checked: false
+          },
+          {
+            text: '300 kW',
+            value: '300 kW',
+            correct: false,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 2',
+        text: 'What charging rates do different Level 3 chargers support?',
+        multiple: true,
+        options: [
+          {
+            text: '12 kW',
+            value: '12 kW',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '2.4 kW',
+            value: '2.4 kW',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '50 kW',
+            value: '50 kW',
+            correct: true,
+            checked: false
+          },
+          {
+            text: '300 kW',
+            value: '300 kW',
+            correct: true,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 3',
+        text: 'What outlet voltage do Level 2 chargers need?',
+        multiple: false,
+        options: [
+          {
+            text: '120 V',
+            value: '120 V',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '240 V',
+            value: '240 V',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: '480 V',
+            value: '480 V',
+            correct: false,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 4',
+        text: 'Can you have a level 3 charger at home?',
+        multiple: false,
+        options: [
+          {
+            text: 'Yes',
+            value: 'Yes',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'No',
+            value: 'No',
+            correct: true,
+            checked: false,
+          },
+        ],
+      },
+    ]
+  },
+  safety: {
+    title: 'EV Safety',
+    questions: [
+      {
+        title: 'Question 1', // title can be more descriptive, like the topic of the question
+        text: 'What type of battery is used in EV cars?',
+        multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+        options: [
+          {
+            text: 'Carbon-zinc ',
+            value: 'Carbon-zinc', // value is a shorter version of text if text is very long
+            correct: false,
+            checked: false,
+          },
+          {
+            text: 'Lithium-ion',
+            value: 'Lithium-ion',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Zinc-air',
+            value: 'Zinc-air',
+            correct: false,
+            checked: false
+          },
+          {
+            text:'Silver-oxide',
+            value: 'Silver-oxide',
+            correct: false,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 2',
+        text: 'Lithium-ion batteries have a much lower risk of fire explosions than gasoline in conventional vehicles.',
+        multiple: false,
+        options: [
+          {
+            text:'Yes',
+            value: 'Yes',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'No',
+            value: 'No',
+            correct: false,
+            checked: false,
+          
+          },
+        ],
+      },
+      {
+        title: 'Question 3',
+        text: 'Thermal runaway is an unstoppable chain reaction causing a fire at temperatures of _____ and above.',
+        multiple: false,
+        options: [
+          {
+            text: '30 degrees',
+            value: '30 degrees',
+            correct: false,
+            checked: false,
+          },
+          {
+            Text:'40 degrees',
+            value: '40 degrees',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '50 degrees',
+            value: '50 degrees',
+            correct: false,
+            checked: false,
+          },
+          {
+            text: '60 degrees',
+            value: '60 degrees',
+            correct: true,
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: 'Question 4',
+        text: 'What are the ways to prevent and reduce the impact of thermal runaway in electric cars?',
+        multiple: true,
+        options: [
+          {
+            text: 'Cell-to-cell protection',
+            value: 'Cell-to-cell protection',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Module-to-module protection',
+            value: 'Module-to-module protection',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Pack level protection',
+            value: 'Pack level protection',
+            correct: true,
+            checked: false,
+          },
+          {
+            text: 'Checking by yourself',
+            value: 'Checking by yourself',
+            correct: false,
+            checked: false,
+          },
+
+        ],
+      },
+    ]
+  },
+  history: {
+		title: 'EV History',
+		questions: [
+			{
+				title: 'Question 1', // title can be more descriptive, like the topic of the question
+				text: 'When and where was the first electric car created?',
+				multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+				options: [
+					{
+						text: '1832 in Scotland',
+						value: '1832 in Scotland',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: '1900 in the US',
+						value: '1900 in the US',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: '1832 in Germany',
+						value: '1832 in Germany',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: '2000 in China',
+						value: '2000 in China',
+						correct: false,
+            checked: false,
+					},
+				],
+			},
+			{
+				title: 'Question 2',
+				text: 'Why did the popularity of electric cars die off?',
+				multiple: false,
+				options: [
+					{
+						text: 'government regulations made it expensive to produce',
+						value: 'government regulations made it expensive to produce',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'safety concerns',
+						value: 'safety concerns',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'advancements in internal-combustion engines, and mass production of cheaper gasoline',
+						value: 'advancements in internal-combustion engines, and mass production of cheaper gasoline',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: 'lack of lithium reserves',
+						value: 'lack of lithium reserves',
+						correct: false,
+            checked: false,
+					},
+				]
+			},
+			{
+				title: 'Question 3',
+				text: 'What is currently the most popular electric car?',
+				multiple: false,
+				options: [
+					{
+						text: 'Nissan Leaf',
+						value: 'Nissan Leaf',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'Tesla Model S',
+						value: 'Tesla Model S',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: 'Tesla Model 3',
+						value: 'Tesla Model 3',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'BMW i3',
+						value: 'BMW i3',
+						correct: false,
+            checked: false,
+					},
+
+				],
+			},
+			{
+				title: 'Question 4',
+				text: 'When did electric cars become popular again?',
+				multiple: false,
+				options: [
+					{
+						text: 'Starting in 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries, and the desire to reduce greenhouse-gas emissions.',
+						value: 'Starting in 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries, and the desire to reduce greenhouse-gas emissions.',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: 'Starting in 1947, after world war II, the US government began to subsidize the development of electric vehicles.',
+						value: 'Starting in 1947, after world war II, the US government began to subsidize the development of electric vehicles.',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'Starting in 2019, after the creation of the company Tesla, electric cars became popular again.',
+						value: 'Starting in 2019, after the creation of the company Tesla, electric cars became popular again.',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'Starting in the late 1990, when a trade war with the middle east caused gas prices to rise',
+						value: 'Starting in the late 1990, when a trade war with the middle east caused gas prices to rise',
+						correct: false,
+            checked: false,
+					},
+				],
+			}
+		]
+	}
+}

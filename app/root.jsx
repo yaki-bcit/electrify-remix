@@ -6,9 +6,15 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Logo from "~/components/icons/Logo";
+import { AiTwotoneHome} from "react-icons/ai";
+import { HiOutlineHome } from "react-icons/hi";
 
-import { AiOutlineDashboard, AiOutlineInfoCircle } from "react-icons/ai";
-import { HiOutlineBookOpen } from "react-icons/hi";
+import BookOpen from "./components/icons/BookOpen";
+import DashIcon from "./components/icons/DashIcon";
+import HomeIcon from "./components/icons/HomeIcon";
+import LogoSmall from "./components/icons/LogoSmall";
+
 
 import styles from "./styles/app.css";
 
@@ -20,11 +26,12 @@ export const meta = () => ({
 
 export const links = () => [
   { rel: "stylesheet", href: styles },
+  { rel: "icon", href: '/images/Logo.svg' }
 ];
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="en" style={{ fontFamily: "Mina, system-ui, sans-serif", lineHeight: "1.4" }}>
       <head>
         <Meta />
         <Links />
@@ -42,7 +49,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row md:justify-between" id="navigation">
             <div className="flex flex-row md:hidden">
               <button
-                className="flex items-center px-3 py-2 border rounded text-teal-500 border-teal-500 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded text-[#3B8D95] border-[#3B8D95] hover:text-white hover:border-white"
                 onClick={() => {
                   const menu = document.getElementById("menu");
                   menu.classList.toggle("hidden");
@@ -63,14 +70,20 @@ export default function App() {
               </button>
             </div>
             <div className="hidden md:flex flex-row border-b border-gray-300">
+            <a
+                href="/home"
+                className="hover:text-teal-800 px-3 py-2"
+              >
+                Home
+              </a>
               <a
-                href="/"
+                href="/knowledge"
                 className="hover:text-teal-800 px-3 py-2"
               >
                 Knowledge
               </a>
               <a
-                href="/knowledge"
+                href="/dashboard"
                 className="hover:text-teal-800 px-3 py-2"
               >
                 Dashboard
@@ -83,34 +96,45 @@ export default function App() {
               </a>
             </div>
           </div>
-          <div id="menu" className="hidden md:hidden absolute text-lg" style={{ backgroundColor: "#C2E1E8" }}>
-            <a
+          <div id="menu" className="hidden md:hidden absolute text-lg z-50" style={{ backgroundColor: "#C2E1E8" }}>
+          <a
               href="/knowledge"
-              className="block hover:text-teal-800 px-3 py-2"
+              className="block hover:text-teal-800 px-5 py-6"
             >
-              <div className="flex content-end">
-                <HiOutlineBookOpen size="1.2em" /> 
-                &nbsp; 
-                <span className="">
-                  Knowledge
+              <div className="flex items-end">
+                <HomeIcon size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">
+                  Home
                 </span>
               </div>
             </a>
             <a
               href="/knowledge"
-              className="block hover:text-teal-800 px-3 py-2"
+              className="block hover:text-teal-800 px-5 py-6"
             >
-              <div className="flex content-end">
-                <AiOutlineDashboard size="1.2em" /> &nbsp; <span>Dashboard</span>
+              <div className="flex items-end">
+                <BookOpen size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">
+                  Knowledge
+                </span>
               </div>
-              
             </a>
             <a
               href="/dashboard"
-              className="block hover:text-teal-800 px-3 py-2"
+              className="block hover:text-teal-800 px-5 py-6"
             >
-              <div className="flex content-end">
-                <AiOutlineInfoCircle size="1.2em" /> &nbsp; <span>About Electrify</span>
+              <div className="flex items-end">
+                <DashIcon size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">Dashboard</span>
+              </div>
+            </a>
+            <a
+              href="/about"
+              className="block hover:text-teal-800 px-5 py-6"
+            >
+              <div className="flex items-end">
+                <LogoSmall size="2em" className="text-[#3B8D95]" /> 
+                <span className="text-[#3B8D95] text-xl ml-2">About Electrify</span>
               </div>
             </a>
           </div>
