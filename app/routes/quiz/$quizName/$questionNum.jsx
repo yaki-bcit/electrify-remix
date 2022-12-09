@@ -26,6 +26,10 @@ export const loader = async ({ params }) => {
 
 export default function Quiz() {
   const { quizData, quizTitle, quizName, questionNum } = useLoaderData()
+  console.log('quizData', quizData)
+  console.log('quizTitle', quizTitle)
+  console.log('quizName', quizName)
+  console.log('questionNum', questionNum)
 
   const [quizAnswers, setQuizAnswers] = useLocalStorage(quizName, quizData.questions)
 

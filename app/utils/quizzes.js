@@ -1,5 +1,5 @@
 export const quizzes = {
-  openning: {
+  opening: {
     title: 'Is an Electric Vehicle (EV)a good choice for you?',
     questions: [
       {
@@ -295,26 +295,26 @@ export const quizzes = {
         multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
         options: [
           {
-            text: 'Carbon Zinc Batteries ',
-            value: 'Carbon Zinc Batteries', // value is a shorter version of text if text is very long
+            text: 'Carbon Zinc ',
+            value: 'Carbon Zinc', // value is a shorter version of text if text is very long
             correct: false,
             checked: false,
           },
           {
-            text: 'Lithium - ion battery',
-            value: 'Lithium - ion battery',
+            text: 'Lithium-ion',
+            value: 'Lithium-ion',
             correct: true,
             checked: false,
           },
           {
-            text: 'Zinc Air Batteries',
-            value: 'Zinc Air Batteries',
+            text: 'Zinc Air',
+            value: 'Zinc Air',
             correct: false,
             checked: false
           },
           {
-            text:'Silver Oxide Batteries',
-            value: 'Silver Oxide Batteries',
+            text:'Silver Oxide',
+            value: 'Silver Oxide',
             correct: false,
             checked: false,
           },
@@ -346,30 +346,29 @@ export const quizzes = {
         multiple: false,
         options: [
           {
-            text: '30 degree',
-            value: '30 degree',
+            text: '30 degrees',
+            value: '30 degrees',
             correct: false,
             checked: false,
           },
           {
-            Text:'40 degree',
-            value: '40 degree',
+            Text:'40 degrees',
+            value: '40 degrees',
             correct: false,
             checked: false,
           },
           {
-            text: '50 degree',
-            value: '50 degree',
+            text: '50 degrees',
+            value: '50 degrees',
             correct: false,
             checked: false,
           },
           {
-            text: '60 degree',
-            value: '60 degree',
+            text: '60 degrees',
+            value: '60 degrees',
             correct: true,
             checked: false,
           },
-
         ],
       },
       {

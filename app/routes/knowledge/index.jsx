@@ -23,9 +23,10 @@ export default function Knowledge() {
     <>
       <PageHeading text="Knowledge Base" />
       <Paragraph text="Let's earn  about electric viechles and find the most suitable car for your needs."/>
-      <WhiteBox href="/safetyKnowledge" text="EV Safety"/>
-      <WhiteBox href="/savingGasKnowledge" text="About Saving Gas?"/>
-      <WhiteBox href="/UsabilityKnowledge" text="EV Usability"/>
+      <WhiteBox href="/knowledge/safety" text="EV Safety"/>
+      <WhiteBox href="/knowledge/savingGas" text="Saving Gas"/>
+      <WhiteBox href="/knowledge/charging" text="EV Charging"/>
+      <WhiteBox href="/knowledge/history" text="EV History"/>
       <WhiteBox href="?" text="About Someone Thinkone?"/>
       <ButtonDark text="Go Back" href="/home"/>
     </>

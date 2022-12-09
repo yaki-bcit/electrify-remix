@@ -6,10 +6,7 @@ or just html elements as the 'children' prop.
 
 export default function WhiteBox({text, href}) {
   return (
-    <a href={href}>
-    <div className="bg-white rounded-lg p-5 mb-4 text-lg">
-      {text}
-    </div>
-    </a>
+      <div className="bg-white rounded-lg p-5 mb-4 text-lg">
+      </div>
   )
 }

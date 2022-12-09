@@ -53,7 +53,7 @@ export default function jane() {
         if (page < 3) {
             setPage(page + 1)
         } if(page === 3){
-            window.location.href = "/safetyKnowledgeCompleted"
+            window.location.href = "/knowledge/safetyCompleted"
         }
     }
 
