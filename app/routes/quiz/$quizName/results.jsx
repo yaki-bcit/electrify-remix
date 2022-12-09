@@ -1,4 +1,4 @@
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react"
 import { useState, useEffect } from "react"
 import useLocalStorage from "~/utils/useLocalStorage"
 

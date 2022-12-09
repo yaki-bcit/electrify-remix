@@ -1,4 +1,5 @@
 import useLocalStorage from "~/utils/useLocalStorage"
+import { useLoaderData } from "@remix-run/react"
 
 import PageHeading from "~/components/PageHeading"
 import WhiteBox from "~/components/WhiteBox"
@@ -13,13 +14,12 @@ export const loader = async () => {
 
   return {
     quizData,
-    knowledgeList
   }
 }
 
 export default function Dashboard() {
-  const { quizData, knowledgeList } = useLoaderData()
-  const [quizAnswers, setQuizAnswers] = useLocalStorage(quizName, quizData.questions)
+  const { quizData } = useLoaderData()
+  //const [quizAnswers, setQuizAnswers] = useLocalStorage(quizName, quizData.questions)
 
   return (
     <>
