@@ -2,6 +2,7 @@ import { useLoaderData } from "@remix-run/react"
 import ProgressBar from '~/components/ProgressBar'
 import FlipCard from '~/components/FlipCard'
 import ButtonBackAndNext from '~/components/Buttons/ButtonBackAndNext'
+import Logo from '~/components/icons/Logo'
 import {useState} from 'react'
 
 import { knowledge } from '~/utils/knowledge'

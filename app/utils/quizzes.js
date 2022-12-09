@@ -1,10 +1,10 @@
 export const quizzes = {
-  opening: {
+  welcome: {
     title: 'Is an Electric Vehicle (EV)a good choice for you?',
     questions: [
       {
         title: 'Question 1',
-        text: 'what would you use your car for?',
+        text: 'What would you use your car for most of the time?',
         multiple: true,
         options: [
           {
@@ -16,24 +16,18 @@ export const quizzes = {
           {
             text: 'Long distance travel',
             value: 'Long distance travel',
-            correct: true,
+            correct: false,
             checked: false,
           },
           {
             text: 'Uber driving',
             value: 'Uber driving',
-            correct: true,
+            correct: false,
             checked: false
           },
           {
-            text:'Groceries and Activities',
-            value: 'Groceries and Activities',
-            correct: true,
-            checked: false,
-          },
-          {
-            text:'Others',
-            value: 'Others',
+            text:'Groceries and occasional activities',
+            value: 'Groceries and activities',
             correct: true,
             checked: false,
           },
@@ -41,45 +35,25 @@ export const quizzes = {
       },
       {
         title: 'Question 2',
-        text: 'Have you ever used a Electric Car?',
-        multiple: false,
-        options: [
-          {
-            text:'Yes',
-            value: 'Yes',
-            correct: true,
-            checked: false,
-          },
-          {
-            text: 'No',
-            value: 'No',
-            correct: true,
-            checked: false,
-          
-          },
-        ],
-      },
-      {
-        title: 'Question 3',
         text: 'How many hours do you drive Weekly?',
         multiple: false,
         options: [
           {
             text: 'Less Than 5 hours',
             value: '5 hours',
-            correct: false,
+            correct: true,
             checked: false,
           },
           {
-            Text:'Around 10 hours',
+            text:'Around 10 hours',
             value: '10 hours',
-            correct: false,
+            correct: true,
             checked: false,
           },
           {
             text: 'Around 15 hours',
             value: '15 hours',
-            correct: false,
+            correct: true,
             checked: false,
           },
           {
@@ -91,33 +65,33 @@ export const quizzes = {
           {
             text: 'More thank 30 hours',
             value: '30 hours',
-            correct: true,
+            correct: false,
             checked: false,
           },
 
         ],
       },
       {
-        title: 'Question 4',
+        title: 'Question 3',
         text: 'What type of road do you drive you car?',
         multiple: true,
         options: [
           {
-            text: 'Pavement',
-            value: 'Pavement',
+            text: 'Paved',
+            value: 'Paved',
             correct: true,
             checked: false,
           },
           {
             text: 'Mud Road',
             value: 'Mud Road',
-            correct: true,
+            correct: false,
             checked: false,
           },
           {
             text: 'Dirt Road',
             value: 'Dirt Road',
-            correct: true,
+            correct: false,
             checked: false,
           },
           {
@@ -138,7 +112,7 @@ export const quizzes = {
       {
         title: 'Question 4',
         text: 'How many passengers do you usually take when you drive?',
-        multiple: true,
+        multiple: false,
         options: [
           {
             text: 'No passengers',
@@ -161,16 +135,15 @@ export const quizzes = {
           {
             text: '5-6 Passengers',
             value: '5-6',
-            correct: false,
+            correct: true,
             checked: false,
           },
           {
             text: 'More than 6 Passengers',
             value: 'More than 6',
-            correct: true,
+            correct: false,
             checked: false,
           },
-
         ],
       },
     ]

@@ -3,6 +3,7 @@ import React from 'react'
 import PageHeading from '~/components/PageHeading'
 import WhiteBoxTall from '~/components/WhiteBoxTall'
 import ProgressBar from '~/components/ProgressBar'
+import Logo from '~/components/icons/Logo'
 
 import { knowledge } from '~/utils/knowledge'
 

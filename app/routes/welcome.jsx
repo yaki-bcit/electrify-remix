@@ -10,7 +10,6 @@ export default function testpage() {
 		This quiz will help you figure out if it is the right decision for you.
 	`
 
-
 	return (
 		<>
 			<div className="block justify-items-center">
@@ -19,8 +18,8 @@ export default function testpage() {
 			<div className="h-[400px] bg-white rounded-lg p-5 mb-4 text-lg  grid grid-rows-2 text-center">
 				<Paragraph text={text} />
 				<div className="my-4">
-				<ButtonDark href="/quizStart" text="Start the quiz" />
-				<ButtonDark href="/landingPage" text="Go back" />
+					<ButtonDark href="/quiz/welcome/1" text="Start the quiz" onClick={() => {}} />
+					<ButtonDark href="/" text="Go back" />
 				</div>
 			</div>
 		</>

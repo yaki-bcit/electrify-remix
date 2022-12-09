@@ -3,7 +3,6 @@ import { useLoaderData } from "@remix-run/react"
 
 import PageHeading from "~/components/PageHeading"
 import WhiteBox from "~/components/WhiteBox"
-import Table from "~/components/Table"
 import Paragraph from "~/components/Paragraph"
 
 import { knowledge } from '~/utils/knowledge'
@@ -57,7 +56,7 @@ export default function Dashboard() {
         {!quizData && <Paragraph text="Loading..." />}
 
         {quizData && getResults().map((result, index) => {
-          if (!result || result.quizName === 'opening') return null
+          if (!result || result.quizName === 'welcome') return null
           return (
             <div key={index}>
               <p className="text-xl mb-4">

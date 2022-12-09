@@ -1,7 +1,6 @@
-import PageHeading from "~/components/PageHeading";
-import WhiteBox from "~/components/WhiteBox";
-import Table from "~/components/Table";
-import Paragraph from "~/components/Paragraph";
+import PageHeading from "~/components/PageHeading"
+import WhiteBox from "~/components/WhiteBox"
+import Paragraph from "~/components/Paragraph"
 
 export default function About() {
   return (
@@ -46,5 +45,5 @@ export default function About() {
         </p>
       </WhiteBox>
     </>
-  );
+  )
 }
