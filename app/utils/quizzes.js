@@ -535,4 +535,104 @@ export const quizzes = {
 			}
 		]
 	},
+  savingGas: {
+    title: `Saving Gas`,
+    questions: [
+      {
+        title: 'Question 1',
+        text: "Electric vehicles are cheaper to fuel",
+        multiple: false,
+        options: [
+          {
+            text: "True",
+            value: "True",
+            correct: true,
+            checked: false
+          }, 
+          {
+            text: "False",
+            value: "False",
+            correct: false,
+            checked: false
+          }
+        ]
+      },
+      {
+        title: 'Question 2',
+        text: 'All EVs cost the same to fuel',
+        multiple: false,
+        options: [
+          {
+            text: "True",
+            value: "True",
+            correct: false,
+            checked: false
+          }, 
+          {
+            text: "False",
+            value: "False",
+            correct: true,
+            checked: false
+          }
+        ]
+      },
+      {
+        title: 'Question 3',
+        text: 'Kia EV6 cost more then 1000 dollar less then a Honda Accord Sport over 1500 miles',
+        multiple: false,
+        options: [
+          {
+            text: "True",
+            value: "True",
+            correct: true,
+            checked: false
+          }, 
+          {
+            text: "False",
+            value: "False",
+            correct: false,
+            checked: false
+          }
+        ]
+      },
+      {
+        title: 'Question 4',
+        text: 'Where is it cheaper to charge your EV?',
+        multiple: false,
+        options: [
+          {
+            text: "Home",
+            value: "Home",
+            correct: true,
+            checked: false
+          }, 
+          {
+            text: "Charging stations",
+            value: "Charging-stations",
+            correct: false,
+            checked: false
+          }
+        ]
+      },
+      {
+        title: 'Question 5',
+        text: 'When should you plug your car at home to save money on electricity?',
+        multiple: false,
+        options: [
+          {
+            text: "Day time",
+            value: "Day",
+            correct: false,
+            checked: false
+          }, 
+          {
+            text: "Night time",
+            value: "Night",
+            correct: true,
+            checked: false
+          }
+        ]
+      }
+    ]
+  }
 }
