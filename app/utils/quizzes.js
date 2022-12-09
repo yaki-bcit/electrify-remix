@@ -3,13 +3,13 @@ export const quizzes = {
     title: 'Is an Electric Vehicle (EV)a good choice for you?',
     questions: [
       {
-        title: 'Question 1', // title can be more descriptive, like the topic of the question
+        title: 'Question 1',
         text: 'what would you use your car for?',
-        multiple: true, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+        multiple: true,
         options: [
           {
             text: 'Work or school',
-            value: 'Work or school', // value is a shorter version of text if text is very long
+            value: 'Work or school',
             correct: true,
             checked: false,
           },
@@ -26,8 +26,8 @@ export const quizzes = {
             checked: false
           },
           {
-            text:'Groceries and Activityes',
-            value: 'Groceries and Activityes',
+            text:'Groceries and Activities',
+            value: 'Groceries and Activities',
             correct: true,
             checked: false,
           },
@@ -66,31 +66,31 @@ export const quizzes = {
         options: [
           {
             text: 'Less Than 5 hours',
-            value: 'Less Than 5 hours',
+            value: '5 hours',
             correct: false,
             checked: false,
           },
           {
             Text:'Around 10 hours',
-            value: 'Around 10 hours',
+            value: '10 hours',
             correct: false,
             checked: false,
           },
           {
             text: 'Around 15 hours',
-            value: 'Around 15 hours',
+            value: '15 hours',
             correct: false,
             checked: false,
           },
           {
             text: 'Around 20 hours',
-            value: 'Around 20 hours',
+            value: '20 hours',
             correct: true,
             checked: false,
           },
           {
             text: 'More thank 30 hours',
-            value: 'More thank 30 hours',
+            value: '30 hours',
             correct: true,
             checked: false,
           },
@@ -147,26 +147,26 @@ export const quizzes = {
             checked: false,
           },
           {
-            text: '1 -2  Passengers',
-            value: '1 -2  Passengers',
+            text: '1 -2 Passengers',
+            value: '1 -2',
             correct: true,
             checked: false,
           },
           {
             text: '3-4  Passengers',
-            value: '3-4  Passengers',
+            value: '3-4',
             correct: true,
             checked: false,
           },
           {
             text: '5-6 Passengers',
-            value: '5-6 Passengers',
+            value: '5-6',
             correct: false,
             checked: false,
           },
           {
             text: 'More than 6 Passengers',
-            value: 'More than 6 Passengers',
+            value: 'More than 6',
             correct: true,
             checked: false,
           },
@@ -179,13 +179,13 @@ export const quizzes = {
     title: 'EV Charging',
     questions: [
       {
-        title: 'Question 1', // title can be more descriptive, like the topic of the question
+        title: 'Question 1',
         text: 'What is the maximum charging rate for a Level 1 charger?',
-        multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+        multiple: false,
         options: [
           {
             text: '12 kW',
-            value: '12 kW', // value is a shorter version of text if text is very long
+            value: '12 kW',
             correct: false,
             checked: false,
           },
@@ -347,25 +347,25 @@ export const quizzes = {
         options: [
           {
             text: '30 degrees',
-            value: '30 degrees',
+            value: '30-degrees',
             correct: false,
             checked: false,
           },
           {
-            Text:'40 degrees',
-            value: '40 degrees',
+            text: '40 degrees',
+            value: '40-degrees',
             correct: false,
             checked: false,
           },
           {
             text: '50 degrees',
-            value: '50 degrees',
+            value: '50-degrees',
             correct: false,
             checked: false,
           },
           {
             text: '60 degrees',
-            value: '60 degrees',
+            value: '60-degrees',
             correct: true,
             checked: false,
           },
@@ -378,25 +378,25 @@ export const quizzes = {
         options: [
           {
             text: 'Cell-to-cell protection',
-            value: 'Cell-to-cell protection',
+            value: 'Cell',
             correct: true,
             checked: false,
           },
           {
             text: 'Module-to-module protection',
-            value: 'Module-to-module protection',
+            value: 'Module',
             correct: true,
             checked: false,
           },
           {
             text: 'Pack level protection',
-            value: 'Pack level protection',
+            value: 'Pack',
             correct: true,
             checked: false,
           },
           {
             text: 'Checking by yourself',
-            value: 'Checking by yourself',
+            value: 'yourself',
             correct: false,
             checked: false,
           },
@@ -415,25 +415,25 @@ export const quizzes = {
 				options: [
 					{
 						text: '1832 in Scotland',
-						value: '1832 in Scotland',
+						value: '1832',
 						correct: true,
             checked: false,
 					},
 					{
 						text: '1900 in the US',
-						value: '1900 in the US',
+						value: '1900',
 						correct: false,
             checked: false,
 					},
 					{
 						text: '1832 in Germany',
-						value: '1832 in Germany',
+						value: '1832',
 						correct: false,
             checked: false,
 					},
 					{
 						text: '2000 in China',
-						value: '2000 in China',
+						value: '2000',
 						correct: false,
             checked: false,
 					},
@@ -446,25 +446,25 @@ export const quizzes = {
 				options: [
 					{
 						text: 'government regulations made it expensive to produce',
-						value: 'government regulations made it expensive to produce',
+						value: 'government',
 						correct: false,
             checked: false,
 					},
 					{
 						text: 'safety concerns',
-						value: 'safety concerns',
+						value: 'safety',
 						correct: false,
             checked: false,
 					},
 					{
 						text: 'advancements in internal-combustion engines, and mass production of cheaper gasoline',
-						value: 'advancements in internal-combustion engines, and mass production of cheaper gasoline',
+						value: 'advancements',
 						correct: true,
             checked: false,
 					},
 					{
 						text: 'lack of lithium reserves',
-						value: 'lack of lithium reserves',
+						value: 'lack',
 						correct: false,
             checked: false,
 					},
@@ -477,25 +477,25 @@ export const quizzes = {
 				options: [
 					{
 						text: 'Nissan Leaf',
-						value: 'Nissan Leaf',
+						value: 'Nissan-Leaf',
 						correct: false,
             checked: false,
 					},
 					{
 						text: 'Tesla Model S',
-						value: 'Tesla Model S',
+						value: 'Tesla-Model-S',
 						correct: true,
             checked: false,
 					},
 					{
 						text: 'Tesla Model 3',
-						value: 'Tesla Model 3',
+						value: 'Tesla-Model-3',
 						correct: false,
             checked: false,
 					},
 					{
 						text: 'BMW i3',
-						value: 'BMW i3',
+						value: 'BMW-i3',
 						correct: false,
             checked: false,
 					},
@@ -509,30 +509,30 @@ export const quizzes = {
 				options: [
 					{
 						text: 'Starting in 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries, and the desire to reduce greenhouse-gas emissions.',
-						value: 'Starting in 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries, and the desire to reduce greenhouse-gas emissions.',
+						value: '2008',
 						correct: true,
             checked: false,
 					},
 					{
 						text: 'Starting in 1947, after world war II, the US government began to subsidize the development of electric vehicles.',
-						value: 'Starting in 1947, after world war II, the US government began to subsidize the development of electric vehicles.',
+						value: '1947',
 						correct: false,
             checked: false,
 					},
 					{
 						text: 'Starting in 2019, after the creation of the company Tesla, electric cars became popular again.',
-						value: 'Starting in 2019, after the creation of the company Tesla, electric cars became popular again.',
+						value: '2019',
 						correct: false,
             checked: false,
 					},
 					{
 						text: 'Starting in the late 1990, when a trade war with the middle east caused gas prices to rise',
-						value: 'Starting in the late 1990, when a trade war with the middle east caused gas prices to rise',
+						value: '1990',
 						correct: false,
             checked: false,
 					},
 				],
 			}
 		]
-	}
+	},
 }

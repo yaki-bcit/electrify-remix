@@ -19,24 +19,59 @@ export const loader = async () => {
 
 export default function Dashboard() {
   const { quizData } = useLoaderData()
-  //const [quizAnswers, setQuizAnswers] = useLocalStorage(quizName, quizData.questions)
+
+  function getResults() {
+    const quizResults = Object.keys(quizData).map((quizName) => {
+      const { title } = quizData[quizName]
+      const [quizAnswers, setQuizAnswers] = useLocalStorage(quizName, quizData[quizName].questions)
+      if (!quizAnswers) return null
+      const results = []
+      quizAnswers.forEach((question, index) => {
+        const answeredCorrectly = question.options.reduce((acc, opt) => acc && opt.correct === opt.checked, true)
+        results.push([question.title, answeredCorrectly])
+      })
+      const totalCorrect = results.reduce((acc, curr) => acc + curr[1], 0)
+      return { title, quizName, results, totalCorrect }
+    })
+
+    return quizResults
+  }
+
+  console.log('dashboard results', getResults())
 
   return (
     <>
       <PageHeading text="Dashboard" />
 
       <WhiteBox>
-        <h2 className="text-lg font-semibold">
+        <h2 className="text-2xl font-semibold">
           EV Advice for You
         </h2>
 
         <Paragraph text="You should buy a Tesla Model 3." />
 
-        <h2 className="text-lg font-semibold mt-4">
+        <h2 className="text-2xl font-semibold mt-6 mb-4">
           Knowledge Base and Quizzes
         </h2>
 
-        <Table />
+        {!quizData && <Paragraph text="Loading..." />}
+
+        {quizData && getResults().map((result, index) => {
+          if (!result || result.quizName === 'opening') return null
+          return (
+            <div key={index}>
+              <p className="text-xl mb-4">
+                <a href={'/knowledge/' + result.quizName}>
+                  <span className="text-teal-600 font-semibold underline">
+                    {result.title}
+                  </span>
+                </a>
+                <span>{' : ' + result.totalCorrect + '/' + result.results.length + ' correct'}</span>
+              </p>
+            </div>
+          )
+        })}
+
       </WhiteBox>
     </>
   );
