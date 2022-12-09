@@ -1,34 +1,44 @@
-import { useState } from "react";
-// import { json } from "@remix-run/node";
-// import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react"
 
-import PageHeading from "~/components/PageHeading";
-import WhiteBox from "~/components/WhiteBox";
-// import Checkbox from "~/components/Checkbox";
-// import RadioGroup from "~/components/RadioGroup";
-// import CheckboxGroup from "~/components/CheckboxGroup";
+import PageHeading from "~/components/PageHeading"
+import WhiteBox from "~/components/WhiteBox"
 
-import HomeIconText from "~/components/HomeIconText";
-import Paragraph from "~/components/Paragraph";
-import ButtonDark from "~/components/Buttons/ButtonDark";
+import HomeIconText from "~/components/HomeIconText"
+import Paragraph from "~/components/Paragraph"
+import ButtonDark from "~/components/Buttons/ButtonDark"
+
+import { knowledge } from '~/utils/knowledge'
 
 export const loader = async () => {
-  return null
-};
+  const knowledgeList = Object.keys(knowledge).map((keyName) => {
+    return { 
+      knowledgeName: keyName, 
+      knowledgeTitle: knowledge[keyName].title
+    }
+  })
+  return {
+    knowledgeList
+  }
+}
 
 export default function Knowledge() {
-  const [answers, setAnswers] = useState([]);
-
+  const { knowledgeList } = useLoaderData()
   return (
     <>
       <PageHeading text="Knowledge Base" />
       <Paragraph text="Let's earn  about electric viechles and find the most suitable car for your needs."/>
-      <WhiteBox href="/knowledge/safety" text="EV Safety"/>
-      <WhiteBox href="/knowledge/savingGas" text="Saving Gas"/>
-      <WhiteBox href="/knowledge/charging" text="EV Charging"/>
-      <WhiteBox href="/knowledge/history" text="EV History"/>
-      <WhiteBox href="?" text="About Someone Thinkone?"/>
-      <ButtonDark text="Go Back" href="/home"/>
+
+      { knowledgeList.map((item) => {
+        return (
+          <a href={`/knowledge/${item.knowledgeName}`} key={item.knowledgeName}>
+            <WhiteBox>
+              {item.knowledgeTitle}
+            </WhiteBox>
+          </a>
+        )
+      })}
+
+      <ButtonDark text="Return to Home" href="/home"/>
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react"
 import { useState, useEffect } from "react"
 import useLocalStorage from "~/utils/useLocalStorage"
 
@@ -26,10 +26,6 @@ export const loader = async ({ params }) => {
 
 export default function Quiz() {
   const { quizData, quizTitle, quizName, questionNum } = useLoaderData()
-  console.log('quizData', quizData)
-  console.log('quizTitle', quizTitle)
-  console.log('quizName', quizName)
-  console.log('questionNum', questionNum)
 
   const [quizAnswers, setQuizAnswers] = useLocalStorage(quizName, quizData.questions)
 
@@ -67,7 +63,7 @@ export default function Quiz() {
 
   return (
     <>
-      {quizAnswers && <ProgressBar progressPercentage={ (questionNum / quizAnswers.length ) * 100 } />}
+      {quizAnswers && <ProgressBar progressPercentage={ Math.round(questionNum * 100 / quizAnswers.length )  } />}
       <PageHeading text={quizTitle} />
       <WhiteBox>
         {quizAnswers && <Paragraph text={quizAnswers[questionNum].text} />}
