@@ -415,7 +415,7 @@ export const quizzes = {
 				options: [
 					{
 						text: '1832 in Scotland',
-						value: '1832',
+						value: '1832-Scotland',
 						correct: true,
             checked: false,
 					},
@@ -427,7 +427,7 @@ export const quizzes = {
 					},
 					{
 						text: '1832 in Germany',
-						value: '1832',
+						value: '1832-Germany',
 						correct: false,
             checked: false,
 					},

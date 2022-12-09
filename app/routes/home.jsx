@@ -18,7 +18,7 @@ export default function Home() {
         <div>
             <Logo/>
             <Paragraph text="Learn about Electronic Vehicles and find your dream cars that suits your needs." />
-            <HomeIconText text="Knowledgee" href="/knowledge" icon={<BookOpen />} menuClick={menuClick} />
+            <HomeIconText text="Knowledge" href="/knowledge" icon={<BookOpen />} menuClick={menuClick} />
             <HomeIconText text="Dashboard" href="/dashboard" icon={<DashIcon />} menuClick={menuClick} />
             <HomeIconText text="About" href="/about" icon={<LogoSmall />} menuClick={menuClick} />
         </div>
