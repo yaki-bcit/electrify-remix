@@ -1,5 +1,5 @@
 export const quizzes = {
-  openning: {
+  opening: {
     title: 'Is an Electric Vehicle (EV)a good choice for you?',
     questions: [
       {
@@ -295,26 +295,26 @@ export const quizzes = {
         multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
         options: [
           {
-            text: 'Carbon Zinc Batteries ',
-            value: 'Carbon Zinc Batteries', // value is a shorter version of text if text is very long
+            text: 'Carbon-zinc ',
+            value: 'Carbon-zinc', // value is a shorter version of text if text is very long
             correct: false,
             checked: false,
           },
           {
-            text: 'Lithium - ion battery',
-            value: 'Lithium - ion battery',
+            text: 'Lithium-ion',
+            value: 'Lithium-ion',
             correct: true,
             checked: false,
           },
           {
-            text: 'Zinc Air Batteries',
-            value: 'Zinc Air Batteries',
+            text: 'Zinc-air',
+            value: 'Zinc-air',
             correct: false,
             checked: false
           },
           {
-            text:'Silver Oxide Batteries',
-            value: 'Silver Oxide Batteries',
+            text:'Silver-oxide',
+            value: 'Silver-oxide',
             correct: false,
             checked: false,
           },
@@ -322,7 +322,7 @@ export const quizzes = {
       },
       {
         title: 'Question 2',
-        text: 'lithium - ion batteries have a much lower risk of fire explosions than gasoline in conventional vehicles.',
+        text: 'Lithium-ion batteries have a much lower risk of fire explosions than gasoline in conventional vehicles.',
         multiple: false,
         options: [
           {
@@ -342,34 +342,33 @@ export const quizzes = {
       },
       {
         title: 'Question 3',
-        text: 'Thermal runaway is an unstoppable chain reaction causing a fire at temperatures of _____ and above',
+        text: 'Thermal runaway is an unstoppable chain reaction causing a fire at temperatures of _____ and above.',
         multiple: false,
         options: [
           {
-            text: '30 degree',
-            value: '30 degree',
+            text: '30 degrees',
+            value: '30 degrees',
             correct: false,
             checked: false,
           },
           {
-            Text:'40 degree',
-            value: '40 degree',
+            Text:'40 degrees',
+            value: '40 degrees',
             correct: false,
             checked: false,
           },
           {
-            text: '50 degree',
-            value: '50 degree',
+            text: '50 degrees',
+            value: '50 degrees',
             correct: false,
             checked: false,
           },
           {
-            text: '60 degree',
-            value: '60 degree',
+            text: '60 degrees',
+            value: '60 degrees',
             correct: true,
             checked: false,
           },
-
         ],
       },
       {
@@ -406,4 +405,134 @@ export const quizzes = {
       },
     ]
   },
+  history: {
+		title: 'EV History',
+		questions: [
+			{
+				title: 'Question 1', // title can be more descriptive, like the topic of the question
+				text: 'When and where was the first electric car created?',
+				multiple: false, // does the question have several correct answers? if yes, checkboxes will be used. if not, radio buttons will be used.
+				options: [
+					{
+						text: '1832 in Scotland',
+						value: '1832 in Scotland',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: '1900 in the US',
+						value: '1900 in the US',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: '1832 in Germany',
+						value: '1832 in Germany',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: '2000 in China',
+						value: '2000 in China',
+						correct: false,
+            checked: false,
+					},
+				],
+			},
+			{
+				title: 'Question 2',
+				text: 'Why did the popularity of electric cars die off?',
+				multiple: false,
+				options: [
+					{
+						text: 'government regulations made it expensive to produce',
+						value: 'government regulations made it expensive to produce',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'safety concerns',
+						value: 'safety concerns',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'advancements in internal-combustion engines, and mass production of cheaper gasoline',
+						value: 'advancements in internal-combustion engines, and mass production of cheaper gasoline',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: 'lack of lithium reserves',
+						value: 'lack of lithium reserves',
+						correct: false,
+            checked: false,
+					},
+				]
+			},
+			{
+				title: 'Question 3',
+				text: 'What is currently the most popular electric car?',
+				multiple: false,
+				options: [
+					{
+						text: 'Nissan Leaf',
+						value: 'Nissan Leaf',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'Tesla Model S',
+						value: 'Tesla Model S',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: 'Tesla Model 3',
+						value: 'Tesla Model 3',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'BMW i3',
+						value: 'BMW i3',
+						correct: false,
+            checked: false,
+					},
+
+				],
+			},
+			{
+				title: 'Question 4',
+				text: 'When did electric cars become popular again?',
+				multiple: false,
+				options: [
+					{
+						text: 'Starting in 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries, and the desire to reduce greenhouse-gas emissions.',
+						value: 'Starting in 2008, a renaissance in electric vehicle manufacturing occurred due to advances in batteries, and the desire to reduce greenhouse-gas emissions.',
+						correct: true,
+            checked: false,
+					},
+					{
+						text: 'Starting in 1947, after world war II, the US government began to subsidize the development of electric vehicles.',
+						value: 'Starting in 1947, after world war II, the US government began to subsidize the development of electric vehicles.',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'Starting in 2019, after the creation of the company Tesla, electric cars became popular again.',
+						value: 'Starting in 2019, after the creation of the company Tesla, electric cars became popular again.',
+						correct: false,
+            checked: false,
+					},
+					{
+						text: 'Starting in the late 1990, when a trade war with the middle east caused gas prices to rise',
+						value: 'Starting in the late 1990, when a trade war with the middle east caused gas prices to rise',
+						correct: false,
+            checked: false,
+					},
+				],
+			}
+		]
+	}
 }

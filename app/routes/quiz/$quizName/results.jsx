@@ -42,6 +42,11 @@ export default function Results() {
     location.assign(`/quiz/${quizName}/1`)
   }
 
+  function handleKnowledgeClick() {
+    setQuizAnswers(quizData.questions)
+    location.assign(`/knowledge/${quizName}`)
+  }
+
   return (
     <>
       <ProgressBar progressPercentage={100} />
@@ -63,7 +68,7 @@ export default function Results() {
       </WhiteBox>
 
       <div className="flex-col items-center">
-        <ButtonDark text="Reread Knowledge" type="button" />
+        <ButtonDark text="Reread Knowledge" type="button" onClick={handleKnowledgeClick} />
         <ButtonDark text="Retry Quiz" type="button" onClick={handleRetryClick} />
       </div>
     </>

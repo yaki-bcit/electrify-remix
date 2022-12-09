@@ -1,4 +1,4 @@
-import { useLoaderData } from "@remix-run/react";
+import { useLoaderData } from "@remix-run/react"
 import { useState, useEffect } from "react"
 import useLocalStorage from "~/utils/useLocalStorage"
 
@@ -63,7 +63,7 @@ export default function Quiz() {
 
   return (
     <>
-      {quizAnswers && <ProgressBar progressPercentage={ (questionNum / quizAnswers.length ) * 100 } />}
+      {quizAnswers && <ProgressBar progressPercentage={ Math.round(questionNum * 100 / quizAnswers.length )  } />}
       <PageHeading text={quizTitle} />
       <WhiteBox>
         {quizAnswers && <Paragraph text={quizAnswers[questionNum].text} />}
