@@ -25,7 +25,7 @@ export default function Index() {
 			<div className="h-[400px] bg-white rounded-lg p-5 mb-4 text-lg  grid grid-rows-2 text-center">
 				<Paragraph text={text} />
 				<ButtonDark href="/home" text="Get Started" />
-				<ButtonLight href="/testPage" text="Do I need an EV" />
+				<ButtonLight href="/welcome" text="Do I need an EV?" />
 			</div>
 		</main>
     </div>

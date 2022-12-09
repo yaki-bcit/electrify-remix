@@ -650,10 +650,6 @@ video {
   max-width: 56rem;
 }
 
-.table-auto {
-  table-layout: auto;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -778,11 +774,6 @@ video {
 .bg-\[\#FCDE97\] {
   --tw-bg-opacity: 1;
   background-color: rgb(252 222 151 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#C2E1E8\] {

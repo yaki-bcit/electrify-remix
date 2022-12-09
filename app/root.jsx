@@ -6,14 +6,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import Logo from "~/components/icons/Logo";
-import { AiTwotoneHome} from "react-icons/ai";
-import { HiOutlineHome } from "react-icons/hi";
+import Logo from "~/components/icons/Logo"
+import { AiTwotoneHome} from "react-icons/ai"
+import { HiOutlineHome } from "react-icons/hi"
 
-import BookOpen from "./components/icons/BookOpen";
-import DashIcon from "./components/icons/DashIcon";
-import HomeIcon from "./components/icons/HomeIcon";
-import LogoSmall from "./components/icons/LogoSmall";
+import BookOpen from "./components/icons/BookOpen"
+import DashIcon from "./components/icons/DashIcon"
+import HomeIcon from "./components/icons/HomeIcon"
+import LogoSmall from "./components/icons/LogoSmall"
 
 
 import styles from "./styles/app.css";
@@ -98,7 +98,7 @@ export default function App() {
           </div>
           <div id="menu" className="hidden md:hidden absolute text-lg z-50" style={{ backgroundColor: "#C2E1E8" }}>
           <a
-              href="/knowledge"
+              href="/home"
               className="block hover:text-teal-800 px-5 py-6"
             >
               <div className="flex items-end">
